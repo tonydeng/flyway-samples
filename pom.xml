@@ -46,6 +46,7 @@
 
     <modules>
     <module>flyway-mybatis</module>
+    <module>flyway-hibernate</module>
   </modules>
 
     <dependencyManagement>
