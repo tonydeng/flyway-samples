@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.tonydeng.samples</groupId>
     <artifactId>flyway-samples</artifactId>
@@ -10,7 +11,7 @@
     <url>https://github.com/tonydeng/flyway-samples</url>
 
     <scm>
-	    <connection>scm:git:git@github.com:tonydeng/flyway-samples.git</connection>
+        <connection>scm:git:git@github.com:tonydeng/flyway-samples.git</connection>
         <developerConnection>scm:git:git@hqgit01.intra.legendsec.com:.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
@@ -42,12 +43,13 @@
         <com.alibaba.fastjson>1.2.39</com.alibaba.fastjson>
         <jodd-bean.version>3.9.1</jodd-bean.version>
         <mybatis-generator.version>1.3.5</mybatis-generator.version>
+        <flywaydb.version>5.0.7</flywaydb.version>
     </properties>
 
     <modules>
-    <module>flyway-mybatis</module>
-    <module>flyway-hibernate</module>
-  </modules>
+        <module>flyway-mybatis</module>
+        <module>flyway-hibernate</module>
+    </modules>
 
     <dependencyManagement>
         <dependencies>
@@ -168,6 +170,11 @@
                 <groupId>joda-time</groupId>
                 <artifactId>joda-time</artifactId>
                 <version>${joda-time.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-core</artifactId>
+                <version>${flywaydb.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
