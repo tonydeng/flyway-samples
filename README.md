@@ -7,8 +7,8 @@ docker pull wolfdeng/mysql
 ```
 
 ```bash
-docker run --name mysql-flyway -p 3306:3306 \\
-    -e MYSQL_DATABASE=FLYWAY -e MYSQL_USER=flyway \\
-    -e MYSQL_PASSWORD=flyway-samples \\
+docker run --name mysql-flyway -p 3306:3306 \
+    -e MYSQL_DATABASE=FLYWAY -e MYSQL_USER=flyway \
+    -e MYSQL_PASSWORD=flyway-samples \
     -e MYSQL_ROOT_PASSWORD=PassW0rd -it -d wolfdeng/mysql
 ```

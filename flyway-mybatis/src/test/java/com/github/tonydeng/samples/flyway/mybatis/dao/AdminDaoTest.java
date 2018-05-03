@@ -6,6 +6,7 @@ import com.github.tonydeng.samples.flyway.mybatis.MyBaitsApplicationTest;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.springframework.jdbc.BadSqlGrammarException;
 
 import javax.annotation.Resource;
 
@@ -15,9 +16,9 @@ public class AdminDaoTest extends MyBaitsApplicationTest {
     private AdminDao adminDao;
 
     @Test
-    void testInsert() {
+    void testInsertBadSqlGrammarException() {
         log.info("test");
-        Assertions.assertThrows(NullPointerException.class, () -> {
+        Assertions.assertThrows(BadSqlGrammarException.class, () -> {
             adminDao.insert(new Admin());
         });
     }
