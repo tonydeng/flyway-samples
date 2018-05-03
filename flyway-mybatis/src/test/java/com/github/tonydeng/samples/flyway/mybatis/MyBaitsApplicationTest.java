@@ -14,7 +14,7 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 @ExtendWith(SpringExtension.class)
 public class MyBaitsApplicationTest {
 
-    @SpringBootApplication(scanBasePackages = {"com.github.tonydeng.samples.flyway.mybatis"})
+    @SpringBootApplication
     static class SpringTestConfiguration {
     }
 
