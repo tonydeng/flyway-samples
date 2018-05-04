@@ -12,7 +12,7 @@
 
     <scm>
         <connection>scm:git:git@github.com:tonydeng/flyway-samples.git</connection>
-        <developerConnection>scm:git:git@hqgit01.intra.legendsec.com:.git</developerConnection>
+        <developerConnection>scm:git:git@github.com:tonydeng/flyway-samples:.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
 
